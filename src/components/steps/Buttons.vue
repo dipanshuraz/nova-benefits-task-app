@@ -47,12 +47,13 @@
         },
         methods: {
             nextBtnTxt() {
-              if(this.$route.name == 'thirdStep') {
-
+              if(this.$route.name == 'secondStep') {
                   return 'Finish';
+              } else {
+                    return 'Next';
               }
 
-              return 'Next';
+              
             },
             togglePrevious() {
                 if(this.$route.name == 'firstStep') {
@@ -128,6 +129,15 @@
                 }
             },
             close() {
+
+                if(this.$store.state.user.fullname && this.$store.state.user.email) {
+                    this.$store.dispatch("ADD_USER");
+                }
+
+                if(this.$store.state.company.companyName) {
+                    this.$store.dispatch("ADD_COMPANY");
+                }   
+                
                 this.showResult = false
             }
         }

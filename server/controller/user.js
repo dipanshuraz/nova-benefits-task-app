@@ -20,6 +20,28 @@ exports.getUsers = asyncHandler(async (req, res, next) => {
   });
 });
 
+// @desc          Add a User
+// @route         POST /api/v1/user/
+// @access        Private
+
+exports.addUser = asyncHandler(async (req, res, next) => {
+  console.log(req.body,'create user hit');
+  let existingUser = await User.findOne({email : req.body.email});
+  if(existingUser) {
+    res.status(200).json({
+      success: true,
+      msg : "already exists"
+    });
+  } else {
+    const user = await User.create(req.body);
+    res.status(201).json({
+      success: true,
+      data: user,
+    });
+  }
+  
+ 
+  });
 
 // @desc          Get Signle Post
 // @route         GET /api/v1/post/:id
@@ -39,19 +61,7 @@ exports.getPost = asyncHandler(async (req, res, next) => {
   });
 });
 
-// @desc          Add a Post
-// @route         POST /api/v1/post/
-// @access        Private
 
-exports.addUser = asyncHandler(async (req, res, next) => {
-console.log(req.body,'create user hit');
-const user = await User.create(req.body);
-
-  res.status(201).json({
-    success: true,
-    data: user,
-  });
-});
 
 // @desc          Update a Courses
 // @route         PUT /api/v1/courses/:id
@@ -93,51 +103,4 @@ exports.deletePost = asyncHandler(async (req, res, next) => {
     success: true,
     data: {},
   });
-});
-
-// @desc          Upload a photo
-// @route         PUT /api/v1/post/:id/photo
-// @access        Private
-
-exports.uploadPhoto = asyncHandler(async (req, res, next) => {
-  const post = await Post.findById(req.params.id);
-  console.log(req.file,'-----------------------------------------')
-  console.log(post,'post')
-  if (!post) {
-    return next(
-      new ErrorResponse(`No photo with the id of ${req.params.id}`, 404)
-    );
-  }
-  if(!req.files){
-    return next( new ErrorResponse('Please Upload a Photo',400) )
-  }
-
-  const file = req.files.file
-console.log(file)
-
-  if(!file.mimetype.startsWith('image')){
-    return next( new ErrorResponse('Please Upload a image file',400) )
-  }
-
-  if(file.size> process.env.MAX_FILE_UPLOAD){
-    return next( new ErrorResponse('Please Upload a image less than 100mb',400) )
-  }
-
-  file.name = `photo_${post._id}${path.parse(file.name).ext}`;
-
-  file.mv(`${process.env.FILE_UPLOAD_PATH}/${file.name}`, async err =>{
-    if(err){
-      console.log(err);
-      return next(new ErrorResponse('problem with file upload', 500));
-
-    }
-
-    await Post.findByIdAndUpdate(req.params.id,{banner:file.name})
-
-    res.status(200).json({
-      success:true,
-      data: file.name
-    })
-
-  })
 });

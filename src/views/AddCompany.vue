@@ -30,7 +30,7 @@ export default {
     }
   },
   created(){
-    console.log('sbs pehle kon')
+    
       this.$store.dispatch("fetchProducts")
   }
  

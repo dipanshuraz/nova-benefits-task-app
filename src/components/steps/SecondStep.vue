@@ -15,7 +15,7 @@
             <div class="form-row mb-4">
                 <div class="col">
                     <select class="form-control" name="industry" id="industry" v-model="industry" aria-placeholder="Chose Industry">
-                      <option selected value="Others">Choose Industry</option>
+                      <option value="Others">Choose Industry</option>
                        <option value="Fashion">Fashion</option>
                        <option value="Food">Food</option>
                        <option value="Education">Education</option>
@@ -31,7 +31,7 @@
                 </div>
                 <div class="col">
                     <select class="form-control" name="funding" id="funding" v-model="funding" aria-placeholder="Funding">
-                      <option selected value="Others">Choose Industry</option>
+                     <option selected value="NA">NA</option>
                        <option value="Self-funding">Self-funding</option>
                        <option value="Seed-capital">Seed-capital</option>
                        <option value="Venture">Venture</option>
@@ -87,7 +87,7 @@
         computed: {
             companyName: {
                 get() {
-                  console.log(this.$store.state,'this.$store.companyName')
+                  
                     return this.$store.state.company.companyName
                 },
                 set(value) {

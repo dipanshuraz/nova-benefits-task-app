@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const UserSchema = new mongoose.Schema({
-  name: { type: String, required : [true, 'Please add a Name'] },
+  fullname: { type: String, required : [true, 'Please add a Name'] },
   email: {
     type: String,
     required: [true, 'Please add an email'],
@@ -11,7 +11,6 @@ const UserSchema = new mongoose.Schema({
       'Please add a valid email'
     ]
   },
-  company: { type: String, required : [true, 'Please add a Name'] },
   createdAt: {
     type: Date,
     default: Date.now

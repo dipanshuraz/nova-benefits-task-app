@@ -2,6 +2,8 @@ import { createStore } from 'vuex';
 // import axios from 'axios'
 // import http from "../http-common";
 import UserAPI from '../api/UserAPI'
+import CompanyAPI from '../api/CompanyAPI'
+
 import shop from '@/api/shop'
 
 export default createStore({
@@ -15,8 +17,8 @@ export default createStore({
          companyName: "",
          website: "",
          numOfEmp: "",
-         industry: "",
-         funding: "",
+         industry: "Others",
+         funding: "NA",
          benefits : false,
          healthInsurance :false,
          sumInsured : '', 
@@ -29,12 +31,14 @@ export default createStore({
          flexibleTimings : false ,
          remoteWorkFriendly : false ,
       },
-      users : []
+      users : [],
+      companies : [],
+      viewCompany : {}
    },
    
    getters : { // computed property
       allPosts: (state) => state.posts,
-      allUsers: (state) => state.users,
+      companies: (state) => state.companies,
       user : state => id => {
          return state.users.find(user => user.id == id)
       }
@@ -55,15 +59,44 @@ export default createStore({
       //    commit('SET_POSTS', response.data)
       //    })
       //    },
-      GET_USERS({ commit }) {
-         console.log('enter GET_USERS');
-         return UserAPI.getUsers()
+      ADD_USER({commit}) {
+         console.log('enter ADD_USER');
+         
+         return UserAPI.addUser(this.state.user)
          .then(response => {
-            console.log(response,'response GET_USERS')
-            commit('SET_USERS', response.data)
+            console.log(response,'response ADD_USER')
+            commit('CLEAR_USER')
             })
             .catch(err => console.log(err,'err'))
          },
+         ADD_COMPANY({commit}) {
+            return CompanyAPI.addCompany(this.state.company)
+            .then(response => {
+               console.log(response,'response company addedd')
+               commit('CLEAR_COMPANY')
+               })
+               .catch(err => console.log(err,'err'))
+         },
+         GET_COMPANIES({ commit }) {
+         console.log('enter GET_COMPANIES');
+         return CompanyAPI.getCompanies()
+         .then(response => {
+            console.log(response,'response GET_USERS')
+            commit('SET_COMPANIES', response.data)
+            })
+            .catch(err => console.log(err,'err'))
+         },
+
+         GET_COMPANY({commit}, id) {
+            console.log(id,'enter GET_COMPANY');
+            return CompanyAPI.getCompany(id)
+            .then(response => {
+               console.log(response,'response GET_USERS')
+               commit('VIEW_COMPANY_DATA', response.data)
+               })
+               .catch(err => console.log(err,'err'))
+            },
+         
          GET_POST({ commit }) {
             console.log('enter GET_POST');
             return UserAPI.getPosts()
@@ -98,23 +131,50 @@ export default createStore({
    },
 
    mutations : {
-      SET_USERS(state, users) {
-         state.users = users
+      CLEAR_USER(state) {
+         state.user.fullname = '';
+         state.user.email = '';
+         },
+
+         CLEAR_COMPANY(state) {
+            state.company.companyName = "";
+            state.company.website = "";
+            state.company.numOfEmp= "";
+            state.company.industry= "Others";
+            state.company.funding= "NA";
+            state.company.benefits = false;
+            state.company.healthInsurance =false;
+            state.company.sumInsured = ''; 
+            state.company.familyCovered = false ;
+            state.company.parentsCovered = false; 
+            state.company.maternityCovered = false; 
+            state.company.gymMembership = false;
+            state.company.freeDocOnCall = false; 
+            state.company.numOfPaidLeaves = ''; 
+            state.company.flexibleTimings = false ;
+            state.company.remoteWorkFriendly = false ;
+            },
+
+      SET_COMPANIES(state, companies) {
+         state.companies = companies;
+         },
+         VIEW_COMPANY_DATA(state, company) {
+            console.log('VIEW_COMPANY_DATA VIEW_COMPANY_DATA')
+            state.viewCompany = company;
          },
       SET_POSTS(state, posts) {
          console.log(posts,'posts');
          state.posts = posts
          },
-
       setProducts(state, products){
          console.log('mutatuon called',products);
          state.products = products;
       },
 
-      setCompanies(state, companies){
-         console.log('mutatuon called companies',companies);
-         state.companies = companies;
-      },
+      // setCompanies(state, companies){
+      //    console.log('mutatuon called companies',companies);
+      //    state.companies = companies;
+      // },
 
       setFullname(state, value) {
          console.log(value,'value')

@@ -19,9 +19,9 @@ app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')))
 
 // Routes setup
-const postRouter = require("./routes/post");
+const company = require("./routes/company");
 const users = require("./routes/user");
-app.use("/api/v1/posts", postRouter);
+app.use("/api/v1/company", company);
 app.use("/api/v1/users", users);
 
 process.env.NODE_ENV === "development" ? app.use(morgan("dev")) : null;

@@ -36,6 +36,8 @@ export default {
   },
   mounted() {
     this.$store.dispatch("GET_USERS");
+    this.$store.dispatch("ADD_USER");
+    
   }
 
 }

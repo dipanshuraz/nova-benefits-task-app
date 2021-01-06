@@ -1,14 +1,13 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Todos from '../views/Todos.vue'
-import NotFound from '../components/NotFound.vue'
-import AddCompany from '../components/AddCompany.vue'
+import NotFound from '../views/NotFound.vue'
+import AddCompany from '../views/AddCompany.vue'
 
 import FirstStep from '../components/steps/FirstStep.vue';
 import SecondStep from '../components/steps/SecondStep.vue';
 // import ThirdStep from '../components/steps/ThirdStep.vue';
-import ViewCompanies from '../components/Companies.vue'
-import viewDetails from '../components/ViewComapnyPage.vue'
+import ViewCompanies from '../views/Companies.vue'
+import viewDetails from '../views/ViewComapnyPage.vue'
 
 const routes = [
   {
@@ -17,18 +16,13 @@ const routes = [
     component: Home
   },
   {
-    path: '/todos',
-    name: 'Todos',
-    component: Todos
-  },
-  {
     path: '/add',
-    name: 'Add Company',
+    name: 'AddCompany',
     component: AddCompany 
   },
   {
     path: '/show-companies',
-    name: 'View Company',
+    name: 'ViewCompanies',
     component: ViewCompanies 
   },
   {

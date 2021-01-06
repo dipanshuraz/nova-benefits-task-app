@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 
 const CompanySchema = new mongoose.Schema({
-  name: { type: String, required : [true, 'Please add a Name'] },
+  
+  companyName: { type: String, required : [true, 'Please add a Name'] },
   website: { type: String },
   numOfEmp: { type: String },
   fundingStage : {
