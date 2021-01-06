@@ -8,6 +8,7 @@ import FirstStep from '../components/steps/FirstStep.vue';
 import SecondStep from '../components/steps/SecondStep.vue';
 // import ThirdStep from '../components/steps/ThirdStep.vue';
 import ViewCompanies from '../components/Companies.vue'
+import viewDetails from '../components/ViewComapnyPage.vue'
 
 const routes = [
   {
@@ -29,6 +30,11 @@ const routes = [
     path: '/show-companies',
     name: 'View Company',
     component: ViewCompanies 
+  },
+  {
+    path: '/view-details/:id',
+    name: 'viewDetails',
+    component: viewDetails 
   },
   {
     path: '/about',

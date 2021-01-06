@@ -1,6 +1,6 @@
 <template>
     
-    <div class="text-center w-50 mx-auto border border-light p-5">
+    <div class="text-left w-50 mx-auto border border-light p-5 ">
 
             <p class="h4 mb-4">Company Details</p>
 
@@ -44,10 +44,10 @@
                 
                  
             </div>
-            <div class="">
+            <div class="my-2">
                  Benefits : <input type="checkbox" id="benefits" name="benefits" class="" v-model="benefits">
                  </div>
-                 <div v-if="benefits" class="">
+                 <div v-if="benefits" class="border p-4">
                    Health Insurance : <input type="checkbox" id="healthInsurance" name="healthInsurance" class="" v-model="healthInsurance">
                    <br>
                    Sum Insured : <input type="text" id="sumInsured" name="sumInsured" class="form-control" v-model="sumInsured">
@@ -57,18 +57,17 @@
                    Parents Covered : <input type="checkbox" id="parentsCovered" name="parentsCovered" class="" v-model="parentsCovered">
                     <br>
                    Maternity Covered : <input type="checkbox" id="maternityCovered" name="maternityCovered" class="" v-model="maternityCovered">
-
                  </div>
-                 <div class="">
-                   Gym Membership : <input type="checkbox" id="gymMembership" name="gymMembership" class="" v-model="gymMembership">
+                 <div class="my-3">
+                   Gym Membership : <input type="checkbox" id="gymMembership" name="gymMembership" class="my-2" v-model="gymMembership">
                    <br>
-                   Free Doctor on Call : <input type="checkbox" id="freeDocOnCall" name="freeDocOnCall" class="" v-model="freeDocOnCall">
+                   Free Doctor on Call : <input type="checkbox" id="freeDocOnCall" name="freeDocOnCall" class="my-2" v-model="freeDocOnCall">
                    <br>
                    Number of Paid Leaves : <input type="number" id="numOfPaidLeaves" name="numOfPaidLeaves" class="form-control" v-model="numOfPaidLeaves">
                    <br>
-                   Flexible Work Timings : <input type="checkbox" id="flexibleTimings" name="flexibleTimings" class="" v-model="flexibleTimings">
+                   Flexible Work Timings : <input type="checkbox" id="flexibleTimings" name="flexibleTimings" class="my-2" v-model="flexibleTimings">
                     <br>
-                   Remote Work Friendly : <input type="checkbox" id="remoteWorkFriendly" name="remoteWorkFriendly" class="" v-model="remoteWorkFriendly">
+                   Remote Work Friendly : <input type="checkbox" id="remoteWorkFriendly" name="remoteWorkFriendly" class="my-2" v-model="remoteWorkFriendly">
                  </div>
 
 
@@ -89,7 +88,7 @@
             companyName: {
                 get() {
                   console.log(this.$store.state,'this.$store.companyName')
-                    return this.$store.state.companyName
+                    return this.$store.state.company.companyName
                 },
                 set(value) {
                     this.$store.commit('setCompanyName', value)
@@ -97,7 +96,7 @@
             },
             website: {
                 get() {
-                    return this.$store.state.website
+                    return this.$store.state.company.website
                 },
                 set(value) {
                     this.$store.commit('setWebsite', value)
@@ -105,7 +104,7 @@
             },
             numOfEmp: {
                 get() {
-                    return this.$store.state.numOfEmp
+                    return this.$store.state.company.numOfEmp
                 },
                 set(value) {
                     this.$store.commit('setNumOfEmp', value)
@@ -113,7 +112,7 @@
             },
             industry: {
                 get() {
-                    return this.$store.state.industry
+                    return this.$store.state.company.industry
                 },
                 set(value) {
                     this.$store.commit('setIndustry', value)
@@ -121,7 +120,7 @@
             },
             funding: {
                 get() {
-                    return this.$store.state.funding
+                    return this.$store.state.company.funding
                 },
                 set(value) {
                     this.$store.commit('setFunding', value)
@@ -129,8 +128,8 @@
             },
             benefits : {
                 get() {
-                  console.log(this.$store.state.benefits,'benefits')
-                    return this.$store.state.benefits
+                  console.log(this.$store.state.company.benefits,'benefits')
+                    return this.$store.state.company.benefits
                 },
                 set(value) {
                   console.log(value,'setBenefits')
@@ -140,8 +139,8 @@
             },
             healthInsurance : {
                get() {
-                  console.log(this.$store.state.healthInsurance,'healthInsurance')
-                    return this.$store.state.healthInsurance
+                  console.log(this.$store.state.company.healthInsurance,'healthInsurance')
+                    return this.$store.state.company.healthInsurance
                 },
                 set(value) {
                   console.log(value,'setHealthInsurance')
@@ -150,8 +149,8 @@
             },
             sumInsured : {
                get() {
-                  console.log(this.$store.state.sumInsured,'sumInsured')
-                    return this.$store.state.sumInsured
+                  console.log(this.$store.state.company.sumInsured,'sumInsured')
+                    return this.$store.state.company.sumInsured
                 },
                 set(value) {
                   console.log(value,'setSumInsured')
@@ -160,8 +159,8 @@
             },
             familyCovered : {
                get() {
-                  console.log(this.$store.state.familyCovered,'familyCovered')
-                    return this.$store.state.familyCovered
+                  console.log(this.$store.state.company.familyCovered,'familyCovered')
+                    return this.$store.state.company.familyCovered
                 },
                 set(value) {
                   console.log(value,'setFamilyCovered')
@@ -170,8 +169,8 @@
             },
             parentsCovered : {
                get() {
-                  console.log(this.$store.state.parentsCovered,'parentsCovered')
-                    return this.$store.state.parentsCovered
+                  console.log(this.$store.state.company.parentsCovered,'parentsCovered')
+                    return this.$store.state.company.parentsCovered
                 },
                 set(value) {
                   console.log(value,'setParentsCovered')
@@ -180,8 +179,8 @@
             },
             maternityCovered : {
                get() {
-                  console.log(this.$store.state.maternityCovered,'maternityCovered')
-                    return this.$store.state.maternityCovered
+                  console.log(this.$store.state.company.maternityCovered,'maternityCovered')
+                    return this.$store.state.company.maternityCovered
                 },
                 set(value) {
                   console.log(value,'setMaternityCovered')
@@ -190,8 +189,8 @@
             },
             gymMembership : {
                get() {
-                  console.log(this.$store.state.gymMembership,'gymMembership')
-                    return this.$store.state.gymMembership
+                  console.log(this.$store.state.company.gymMembership,'gymMembership')
+                    return this.$store.state.company.gymMembership
                 },
                 set(value) {
                   console.log(value,'setGymMembership')
@@ -200,8 +199,8 @@
             },
             freeDocOnCall : {
                get() {
-                  console.log(this.$store.state.freeDocOnCall,'freeDocOnCall')
-                    return this.$store.state.freeDocOnCall
+                  console.log(this.$store.state.company.freeDocOnCall,'freeDocOnCall')
+                    return this.$store.state.company.freeDocOnCall
                 },
                 set(value) {
                   console.log(value,'setFreeDocOnCall')
@@ -210,8 +209,8 @@
             },
             numOfPaidLeaves : {
                get() {
-                  console.log(this.$store.state.numOfPaidLeaves,'numOfPaidLeaves')
-                    return this.$store.state.numOfPaidLeaves
+                  console.log(this.$store.state.company.numOfPaidLeaves,'numOfPaidLeaves')
+                    return this.$store.state.company.numOfPaidLeaves
                 },
                 set(value) {
                   console.log(value,'setNumOfPaidLeaves')
@@ -220,8 +219,8 @@
             },
             flexibleTimings : {
                get() {
-                  console.log(this.$store.state.flexibleTimings,'flexibleTimings')
-                    return this.$store.state.flexibleTimings
+                  console.log(this.$store.state.company.flexibleTimings,'flexibleTimings')
+                    return this.$store.state.company.flexibleTimings
                 },
                 set(value) {
                   console.log(value,'setFlexibleTimings')
@@ -230,8 +229,8 @@
             },
             remoteWorkFriendly : {
                get() {
-                  console.log(this.$store.state.remoteWorkFriendly,'remoteWorkFriendly')
-                    return this.$store.state.remoteWorkFriendly
+                  console.log(this.$store.state.company.remoteWorkFriendly,'remoteWorkFriendly')
+                    return this.$store.state.company.remoteWorkFriendly
                 },
                 set(value) {
                   console.log(value,'setRemoteWorkFriendly')

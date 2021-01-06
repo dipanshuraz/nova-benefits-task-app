@@ -5,32 +5,23 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Company Name</th>
+      <th scope="col">Location</th>
+      <th scope="col">View</th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
+    {{users}}
+    <!-- <tr v-for='(user , index) in users' :key='user.id'>
+      
+      <td>{{index}}</td>
+      <td>{{user.username}}</td>
+      <td>{{user.address.street}}</td>
+      <td><router-link  :to="`/view-details/${user.id}`" >View</router-link></td>
+    </tr> -->
   </tbody>
 </table>
+
     </div>
     <!-- <button class="btn btn-outline-success" @click='increment()'>Submit You Company</button> -->
     <!-- <button class="btn btn-outline-success" @click="decrement()">Show all Companies</button> -->
@@ -45,11 +36,15 @@ export default {
   computed : {
     products () {
       return this.$store.state.products 
+    },
+     users() {
+    return this.$store.state.users
     }
   },
   created(){
     console.log('sbs pehle kon')
       this.$store.dispatch("fetchProducts")
+       this.$store.dispatch("GET_USERS");
   }
  
 }

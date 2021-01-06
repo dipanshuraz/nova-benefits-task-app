@@ -74,37 +74,36 @@
 
                     // handle saving of the form
                     this.result = `
-                    <div class="container-fluid ">
+                    <div class="container-fluid text-left">
                             <div class="row">
                               <div class="col-12 col-md-6">
                         <h5>User Details</h5>
-                        <p class='m-0 p-0'><strong> Name: </strong> ${this.$store.state.fullname}</p>
-                        <p  class='m-0 p-0'><strong>Email: </strong> ${this.$store.state.email}</p>
-                        <p  class='m-0 p-0'><strong>Email: </strong> ${this.$store.state.company}</p>
+                        <p class='m-0 p-0'><strong> Name: </strong> ${this.$store.state.user.fullname}</p>
+                        <p  class='m-0 p-0'><strong>Email: </strong> ${this.$store.state.user.email}</p>
                               </div>
                               <div class="col-12 col-md-6">
                                  <h5>Company Details</h5>
-                    <p  class='m-0 p-0'><strong> company Name: </strong> ${this.$store.state.companyName}</p>
-                    <p  class='m-0 p-0'><strong>Website : </strong> ${this.$store.state.website}</p>
-                    <p  class='m-0 p-0'><strong>Number of Employees: </strong> ${this.$store.state.numOfEmp}</p>
-                    <p  class='m-0 p-0'><strong>Industry : </strong> ${this.$store.state.industry}</p>
-                    <p  class='m-0 p-0'><strong>Funding : </strong> ${this.$store.state.funding}</p>
+                    <p  class='m-0 p-0'><strong> company Name: </strong> ${this.$store.state.company.companyName}</p>
+                    <p  class='m-0 p-0'><strong>Website : </strong> ${this.$store.state.company.website}</p>
+                    <p  class='m-0 p-0'><strong>Number of Employees: </strong> ${this.$store.state.company.numOfEmp}</p>
+                    <p  class='m-0 p-0'><strong>Industry : </strong> ${this.$store.state.company.industry}</p>
+                    <p  class='m-0 p-0'><strong>Funding : </strong> ${this.$store.state.company.funding}</p>
 
-                     <p  class='m-0 p-0'><strong>Benefits : </strong> ${this.$store.state.benefits}</p>
+                     <p  class='m-0 p-0'><strong>Benefits : </strong> ${this.$store.state.company.benefits}</p>
 
               
-                     <p  class='m-0 p-0'><strong>healthInsurance : </strong> ${this.$store.state.healthInsurance}</p>
-                    <p  class='m-0 p-0'><strong>sumInsured: </strong> ${this.$store.state.sumInsured}</p>
-                    <p  class='m-0 p-0'><strong>familyCovered: </strong> ${this.$store.state.familyCovered}</p>
-                    <p  class='m-0 p-0'><strong>parentsCovered: </strong> ${this.$store.state.parentsCovered}</p>
-                    <p  class='m-0 p-0'><strong>maternityCovered: </strong> ${this.$store.state.maternityCovered}</p>
+                     <p  class='m-0 p-0'><strong>healthInsurance : </strong> ${this.$store.state.company.healthInsurance}</p>
+                    <p  class='m-0 p-0'><strong>sumInsured: </strong> ${this.$store.state.company.sumInsured}</p>
+                    <p  class='m-0 p-0'><strong>familyCovered: </strong> ${this.$store.state.company.familyCovered}</p>
+                    <p  class='m-0 p-0'><strong>parentsCovered: </strong> ${this.$store.state.company.parentsCovered}</p>
+                    <p  class='m-0 p-0'><strong>maternityCovered: </strong> ${this.$store.state.company.maternityCovered}</p>
                    
                    
-                    <p  class='m-0 p-0'><strong>gymMembership: </strong> ${this.$store.state.gymMembership}</p>
-                    <p  class='m-0 p-0'><strong>freeDocOnCall: </strong> ${this.$store.state.freeDocOnCall}</p>
-                    <p  class='m-0 p-0'><strong>numOfPaidLeaves: </strong> ${this.$store.state.numOfPaidLeaves}</p>
-                     <p  class='m-0 p-0'><strong>flexibleTimings: </strong> ${this.$store.state.flexibleTimings}</p>
-                      <p  class='m-0 p-0'><strong>remoteWorkFriendly: </strong> ${this.$store.state.remoteWorkFriendly}</p>
+                    <p  class='m-0 p-0'><strong>gymMembership: </strong> ${this.$store.state.company.gymMembership}</p>
+                    <p  class='m-0 p-0'><strong>freeDocOnCall: </strong> ${this.$store.state.company.freeDocOnCall}</p>
+                    <p  class='m-0 p-0'><strong>numOfPaidLeaves: </strong> ${this.$store.state.company.numOfPaidLeaves}</p>
+                     <p  class='m-0 p-0'><strong>flexibleTimings: </strong> ${this.$store.state.company.flexibleTimings}</p>
+                      <p  class='m-0 p-0'><strong>remoteWorkFriendly: </strong> ${this.$store.state.company.remoteWorkFriendly}</p>
                      
                               </div>
                             </div>
