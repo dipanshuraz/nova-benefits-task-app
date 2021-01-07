@@ -6,6 +6,7 @@ const {
   updateCompany,
   deleteCompany,
   getTopCompanies,
+  callme,
 } = require('../controller/company');
 
 const router = express.Router({ mergeParams: true });
@@ -16,6 +17,7 @@ router
   .post(addCompany);
 
 router.route('/getTop/:industry').get(getTopCompanies);
+router.route('/callme').get(callme);
 
 router
   .route('/:id')

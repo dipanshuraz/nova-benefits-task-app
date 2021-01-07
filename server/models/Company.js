@@ -1,11 +1,10 @@
 const mongoose = require('mongoose');
 
 const CompanySchema = new mongoose.Schema({
-  
-  companyName: { type: String, required : [true, 'Please add a Name'] },
+  companyName: { type: String, required: [true, 'Please add a Name'] },
   website: { type: String },
   numOfEmp: { type: String },
-  fundingStage : {
+  fundingStage: {
     type: String,
     enum: [
       'Self-funding',
@@ -15,11 +14,11 @@ const CompanySchema = new mongoose.Schema({
       'Series B',
       'Series C',
       'IPO',
-      'NA'
+      'NA',
     ],
     default: 'NA',
   },
-  industry : {
+  industry: {
     type: String,
     enum: [
       'Fashion',
@@ -32,26 +31,25 @@ const CompanySchema = new mongoose.Schema({
       'Transport',
       'Finance',
       'Software',
-      'Others'
+      'Others',
     ],
     default: 'Others',
   },
-  benefits: {type : Boolean ,default:false},
-  healthInsurance : {type : Boolean ,default:false},
-  sumInsured: { type: String, default: '' },
-  familyCovered: {type : Boolean ,default : false},
-  parentsCovered: {type : Boolean ,default : false},
-  maternityCovered: {type : Boolean ,default : false},
-  gymMembership : {type : Boolean ,default:false},
-  freeDocOnCall: { type: String, default: '' },
-  numOfPaidLeaves: { type: Number, default: null },
-  flexibleTimings: {type : Boolean ,default:false},
-  remoteWorkFriendly: {type : Boolean ,default:false},
+  benefits: { type: Boolean, default: false },
+  healthInsurance: { type: Boolean, default: false },
+  sumInsured: { type: String, default: 0 },
+  familyCovered: { type: Boolean, default: false },
+  parentsCovered: { type: Boolean, default: false },
+  maternityCovered: { type: Boolean, default: false },
+  gymMembership: { type: Boolean, default: false },
+  freeDocOnCall: { type: String, default: false },
+  numOfPaidLeaves: { type: Number, default: 0 },
+  flexibleTimings: { type: Boolean, default: false },
+  remoteWorkFriendly: { type: Boolean, default: false },
   createdAt: {
     type: Date,
-    default: Date.now
-  }
+    default: Date.now,
+  },
 });
-
 
 module.exports = mongoose.model('Company', CompanySchema);

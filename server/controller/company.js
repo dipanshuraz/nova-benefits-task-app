@@ -1,7 +1,10 @@
 const Company = require('../models/Company');
-const path = require('path');
 const ErrorResponse = require('../utils/errorResponse');
 const asyncHandler = require('../middleware/async');
+const fs = require('fs');
+
+const dataJson = fs.readFileSync(__dirname + '/data.json');
+const companyData = JSON.parse(dataJson);
 
 exports.getCompanies = asyncHandler(async (req, res, next) => {
   const companies = await Company.find().sort({ createdAt: -1 });
@@ -78,5 +81,50 @@ exports.deleteCompany = asyncHandler(async (req, res, next) => {
   res.status(200).json({
     success: true,
     data: {},
+  });
+});
+
+let old_key = 'NAME';
+let new_key = 'companyName';
+const fundings = [
+  'Self-funding',
+  'Seed-capital',
+  'Venture',
+  'Series A',
+  'Series B',
+  'Series C',
+  'IPO',
+  'NA',
+];
+const industry = [
+  'Fashion',
+  'Food',
+  'Education',
+  'Music',
+  'Internet',
+  'Real Estate',
+  'Sports',
+  'Transport',
+  'Finance',
+  'Software',
+  'Others',
+];
+
+exports.callme = asyncHandler(async (req, res, next) => {
+  let data = companyData.map((element) => {
+    const Fundingrandom = Math.floor(Math.random() * fundings.length);
+    const industryRandom = Math.floor(Math.random() * industry.length);
+
+    element.numOfEmp = Math.floor(Math.random() * 100);
+    element.fundingStage = fundings[Fundingrandom];
+    element.industryRandom = industry[industryRandom];
+    element.sumInsured = Math.floor(Math.random() * 10000);
+    element.numOfPaidLeaves = Math.floor(Math.random() * 10);
+    return element;
+  });
+
+  return res.status(200).json({
+    success: true,
+    data: data,
   });
 });

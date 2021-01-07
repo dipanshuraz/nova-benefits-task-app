@@ -1,0 +1,1577 @@
+[
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "The Economist",
+    "numOfEmp": 96,
+    "fundingStage": "Series A",
+    "industryRandom": "Sports",
+    "sumInsured": 3250,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Delhi, India",
+    "companyName": "SquadStack",
+    "numOfEmp": 38,
+    "fundingStage": "Series B",
+    "industryRandom": "Sports",
+    "sumInsured": 6889,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Kotak Mahindra Bank Limited",
+    "numOfEmp": 87,
+    "fundingStage": "IPO",
+    "industryRandom": "Others",
+    "sumInsured": 6229,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 83,
+    "fundingStage": "Venture",
+    "industryRandom": "Fashion",
+    "sumInsured": 2866,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "tata motors",
+    "numOfEmp": 62,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Internet",
+    "sumInsured": 732,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Motilal Oswal",
+    "numOfEmp": 69,
+    "fundingStage": "IPO",
+    "industryRandom": "Food",
+    "sumInsured": 6025,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "YES BANK",
+    "numOfEmp": 94,
+    "fundingStage": "NA",
+    "industryRandom": "Sports",
+    "sumInsured": 3531,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "rs solution",
+    "numOfEmp": 24,
+    "fundingStage": "NA",
+    "industryRandom": "Food",
+    "sumInsured": 2595,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "tata motors",
+    "numOfEmp": 66,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Music",
+    "sumInsured": 5479,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Razorpay",
+    "numOfEmp": 55,
+    "fundingStage": "Series A",
+    "industryRandom": "Education",
+    "sumInsured": 4281,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 49,
+    "fundingStage": "Series B",
+    "industryRandom": "Music",
+    "sumInsured": 1030,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 31,
+    "fundingStage": "Series A",
+    "industryRandom": "Music",
+    "sumInsured": 1000,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Byjus",
+    "numOfEmp": 33,
+    "fundingStage": "NA",
+    "industryRandom": "Transport",
+    "sumInsured": 6191,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Clinton Health Access Initiative",
+    "numOfEmp": 67,
+    "fundingStage": "Series B",
+    "industryRandom": "Sports",
+    "sumInsured": 1728,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 87,
+    "fundingStage": "Series C",
+    "industryRandom": "Finance",
+    "sumInsured": 5368,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Kanpur, Uttar Pradesh, India",
+    "companyName": "JobsLo Consultants",
+    "numOfEmp": 29,
+    "fundingStage": "IPO",
+    "industryRandom": "Others",
+    "sumInsured": 9849,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Sahibzada Ajit Singh Nagar, Punjab, India",
+    "companyName": "Vision Esteem",
+    "numOfEmp": 19,
+    "fundingStage": "IPO",
+    "industryRandom": "Food",
+    "sumInsured": 5713,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 1,
+    "fundingStage": "Series A",
+    "industryRandom": "Finance",
+    "sumInsured": 4391,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Kolkata, West Bengal, India",
+    "companyName": "Cognizant Technology Solutions India Pvt Ltd",
+    "numOfEmp": 79,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Food",
+    "sumInsured": 4910,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "NewGenApps",
+    "numOfEmp": 7,
+    "fundingStage": "Series B",
+    "industryRandom": "Food",
+    "sumInsured": 7440,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "SAC Management India Pvt. Ltd.",
+    "numOfEmp": 14,
+    "fundingStage": "IPO",
+    "industryRandom": "Food",
+    "sumInsured": 3649,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Adecco",
+    "numOfEmp": 32,
+    "fundingStage": "NA",
+    "industryRandom": "Food",
+    "sumInsured": 3983,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 54,
+    "fundingStage": "Venture",
+    "industryRandom": "Fashion",
+    "sumInsured": 914,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "The Economist Group",
+    "numOfEmp": 96,
+    "fundingStage": "NA",
+    "industryRandom": "Sports",
+    "sumInsured": 5481,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "InstaRem",
+    "numOfEmp": 31,
+    "fundingStage": "IPO",
+    "industryRandom": "Sports",
+    "sumInsured": 7345,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Ahmedabad, Gujarat, India",
+    "companyName": "Perfect Solutions",
+    "numOfEmp": 25,
+    "fundingStage": "IPO",
+    "industryRandom": "Others",
+    "sumInsured": 9223,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "Flipkart",
+    "numOfEmp": 75,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Finance",
+    "sumInsured": 6251,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Hyatt",
+    "numOfEmp": 80,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Sports",
+    "sumInsured": 7821,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "amazon",
+    "numOfEmp": 48,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Fashion",
+    "sumInsured": 7750,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Delhi, Delhi, India",
+    "companyName": "The Nature Conservancy",
+    "numOfEmp": 93,
+    "fundingStage": "Venture",
+    "industryRandom": "Finance",
+    "sumInsured": 2396,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "Digital Ready",
+    "numOfEmp": 49,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Finance",
+    "sumInsured": 8328,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Andhra Pradesh, India",
+    "companyName": "amazon",
+    "numOfEmp": 55,
+    "fundingStage": "Series C",
+    "industryRandom": "Music",
+    "sumInsured": 2125,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Reliance Jio Infocomm Limited",
+    "numOfEmp": 88,
+    "fundingStage": "Series C",
+    "industryRandom": "Finance",
+    "sumInsured": 7568,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Hyatt",
+    "numOfEmp": 15,
+    "fundingStage": "Venture",
+    "industryRandom": "Real Estate",
+    "sumInsured": 808,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Bareilly, Uttar Pradesh, India",
+    "companyName": "YES BANK",
+    "numOfEmp": 9,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Fashion",
+    "sumInsured": 6417,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "YES BANK",
+    "numOfEmp": 80,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Transport",
+    "sumInsured": 9529,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "Team Management Services",
+    "numOfEmp": 95,
+    "fundingStage": "NA",
+    "industryRandom": "Software",
+    "sumInsured": 9790,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Capgemini",
+    "numOfEmp": 68,
+    "fundingStage": "Venture",
+    "industryRandom": "Real Estate",
+    "sumInsured": 5796,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "Reliance Jio Infocomm Limited",
+    "numOfEmp": 2,
+    "fundingStage": "IPO",
+    "industryRandom": "Education",
+    "sumInsured": 2135,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "Kotak Mahindra Bank Limited",
+    "numOfEmp": 16,
+    "fundingStage": "Series C",
+    "industryRandom": "Software",
+    "sumInsured": 6881,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "Flipkart",
+    "numOfEmp": 85,
+    "fundingStage": "Series C",
+    "industryRandom": "Education",
+    "sumInsured": 5810,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Razorpay",
+    "numOfEmp": 27,
+    "fundingStage": "Series B",
+    "industryRandom": "Food",
+    "sumInsured": 7932,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "tata motors",
+    "numOfEmp": 97,
+    "fundingStage": "IPO",
+    "industryRandom": "Sports",
+    "sumInsured": 8330,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "Adecco",
+    "numOfEmp": 18,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Food",
+    "sumInsured": 8595,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Secunderābād, Telangana, India",
+    "companyName": "amazon",
+    "numOfEmp": 94,
+    "fundingStage": "Series B",
+    "industryRandom": "Finance",
+    "sumInsured": 4534,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Delhi, India",
+    "companyName": "Kotak Mahindra Bank Limited",
+    "numOfEmp": 61,
+    "fundingStage": "Venture",
+    "industryRandom": "Software",
+    "sumInsured": 9417,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "amazon",
+    "numOfEmp": 23,
+    "fundingStage": "Venture",
+    "industryRandom": "Sports",
+    "sumInsured": 1857,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "ACH Management Consultants Pvt Ltd",
+    "numOfEmp": 42,
+    "fundingStage": "Venture",
+    "industryRandom": "Others",
+    "sumInsured": 3812,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 5,
+    "fundingStage": "Series C",
+    "industryRandom": "Finance",
+    "sumInsured": 9950,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Capgemini",
+    "numOfEmp": 7,
+    "fundingStage": "Venture",
+    "industryRandom": "Fashion",
+    "sumInsured": 1579,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Kanpur, Uttar Pradesh, India",
+    "companyName": "st solutions",
+    "numOfEmp": 18,
+    "fundingStage": "Series A",
+    "industryRandom": "Others",
+    "sumInsured": 7034,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "Suzlon Energy Limited",
+    "numOfEmp": 97,
+    "fundingStage": "IPO",
+    "industryRandom": "Software",
+    "sumInsured": 6466,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "amazon",
+    "numOfEmp": 70,
+    "fundingStage": "Series C",
+    "industryRandom": "Others",
+    "sumInsured": 1615,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Bardez, Goa, India",
+    "companyName": "Marriott Hotels",
+    "numOfEmp": 32,
+    "fundingStage": "Venture",
+    "industryRandom": "Real Estate",
+    "sumInsured": 6919,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Shillong, Meghalaya, India",
+    "companyName": "ACH Management Consultants Pvt Ltd",
+    "numOfEmp": 78,
+    "fundingStage": "Series A",
+    "industryRandom": "Internet",
+    "sumInsured": 524,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Perfect Solutions",
+    "numOfEmp": 78,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Internet",
+    "sumInsured": 9124,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "amazon",
+    "numOfEmp": 98,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Others",
+    "sumInsured": 6856,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Shimoga, Karnataka, India",
+    "companyName": "Kotak Mahindra Bank Limited",
+    "numOfEmp": 88,
+    "fundingStage": "Series C",
+    "industryRandom": "Internet",
+    "sumInsured": 9430,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Placement India",
+    "numOfEmp": 23,
+    "fundingStage": "Series A",
+    "industryRandom": "Sports",
+    "sumInsured": 982,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 74,
+    "fundingStage": "Venture",
+    "industryRandom": "Others",
+    "sumInsured": 9974,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Hyderabad, Telangana, India",
+    "companyName": "Oracle",
+    "numOfEmp": 33,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Software",
+    "sumInsured": 3342,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 49,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Fashion",
+    "sumInsured": 8601,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Delhi, Delhi, India",
+    "companyName": "World Food Programme",
+    "numOfEmp": 15,
+    "fundingStage": "Venture",
+    "industryRandom": "Others",
+    "sumInsured": 4060,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "Mcgill University",
+    "numOfEmp": 0,
+    "fundingStage": "IPO",
+    "industryRandom": "Finance",
+    "sumInsured": 707,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Delhi, Delhi, India",
+    "companyName": "Apollo Hospitals",
+    "numOfEmp": 29,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Software",
+    "sumInsured": 7849,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Noida, Uttar Pradesh, India",
+    "companyName": "Cognizant Technology Solutions India Pvt Ltd",
+    "numOfEmp": 38,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Music",
+    "sumInsured": 5034,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Noida, Uttar Pradesh, India",
+    "companyName": "Oracle",
+    "numOfEmp": 53,
+    "fundingStage": "NA",
+    "industryRandom": "Education",
+    "sumInsured": 3953,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Gwalior, Madhya Pradesh, India",
+    "companyName": "Kotak Mahindra Bank Limited",
+    "numOfEmp": 29,
+    "fundingStage": "IPO",
+    "industryRandom": "Transport",
+    "sumInsured": 9528,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Saviynt",
+    "numOfEmp": 69,
+    "fundingStage": "Series A",
+    "industryRandom": "Others",
+    "sumInsured": 1327,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Meero",
+    "numOfEmp": 71,
+    "fundingStage": "Series C",
+    "industryRandom": "Food",
+    "sumInsured": 8817,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "amazon",
+    "numOfEmp": 58,
+    "fundingStage": "Series C",
+    "industryRandom": "Internet",
+    "sumInsured": 1847,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Myntra",
+    "numOfEmp": 36,
+    "fundingStage": "Series C",
+    "industryRandom": "Others",
+    "sumInsured": 2527,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "amazon",
+    "numOfEmp": 56,
+    "fundingStage": "NA",
+    "industryRandom": "Fashion",
+    "sumInsured": 8273,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "Randstad MENA",
+    "numOfEmp": 56,
+    "fundingStage": "NA",
+    "industryRandom": "Sports",
+    "sumInsured": 9345,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Nashik, Maharashtra, India",
+    "companyName": "Kotak Mahindra Bank Limited",
+    "numOfEmp": 80,
+    "fundingStage": "IPO",
+    "industryRandom": "Others",
+    "sumInsured": 5331,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Nashik, Maharashtra, India",
+    "companyName": "Placement India",
+    "numOfEmp": 6,
+    "fundingStage": "Venture",
+    "industryRandom": "Fashion",
+    "sumInsured": 160,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "Cognizant Technology Solutions India Pvt Ltd",
+    "numOfEmp": 25,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Internet",
+    "sumInsured": 407,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "Mumbai Rozgaar Pvt Ltd",
+    "numOfEmp": 69,
+    "fundingStage": "Series B",
+    "industryRandom": "Finance",
+    "sumInsured": 5682,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Placement India",
+    "numOfEmp": 28,
+    "fundingStage": "Series C",
+    "industryRandom": "Education",
+    "sumInsured": 1926,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Meesho",
+    "numOfEmp": 45,
+    "fundingStage": "Series B",
+    "industryRandom": "Others",
+    "sumInsured": 8697,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Mangaluru, Karnataka, India",
+    "companyName": "Perfect Solutions",
+    "numOfEmp": 97,
+    "fundingStage": "Series C",
+    "industryRandom": "Transport",
+    "sumInsured": 4149,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "amazon",
+    "numOfEmp": 58,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Finance",
+    "sumInsured": 6257,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "Reliance Communications",
+    "numOfEmp": 47,
+    "fundingStage": "Series A",
+    "industryRandom": "Others",
+    "sumInsured": 7486,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "amazon",
+    "numOfEmp": 54,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Transport",
+    "sumInsured": 321,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "Tata Communications",
+    "numOfEmp": 32,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Education",
+    "sumInsured": 6692,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "RBL Bank",
+    "numOfEmp": 38,
+    "fundingStage": "NA",
+    "industryRandom": "Education",
+    "sumInsured": 6193,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Mahindra Holidays & Resorts India Limited",
+    "numOfEmp": 29,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Food",
+    "sumInsured": 9026,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Silicon Valley Bank",
+    "numOfEmp": 49,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Internet",
+    "sumInsured": 4478,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Thane, Maharashtra, India",
+    "companyName": "Reliance Jio Infocomm Limited",
+    "numOfEmp": 69,
+    "fundingStage": "Series B",
+    "industryRandom": "Internet",
+    "sumInsured": 24,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Panchkula, Haryana, India",
+    "companyName": "Vision Esteem",
+    "numOfEmp": 89,
+    "fundingStage": "Series B",
+    "industryRandom": "Others",
+    "sumInsured": 4134,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "amazon",
+    "numOfEmp": 80,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Others",
+    "sumInsured": 2042,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Aurangabad, Maharashtra, India",
+    "companyName": "Dreams Solutions",
+    "numOfEmp": 78,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Sports",
+    "sumInsured": 6533,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "Zensar Technologies Ltd",
+    "numOfEmp": 55,
+    "fundingStage": "Venture",
+    "industryRandom": "Software",
+    "sumInsured": 6788,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Kolkata, West Bengal, India",
+    "companyName": "2COMS Consulting Private Limited",
+    "numOfEmp": 37,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Others",
+    "sumInsured": 5323,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "Junglee Games",
+    "numOfEmp": 63,
+    "fundingStage": "IPO",
+    "industryRandom": "Food",
+    "sumInsured": 3757,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "amazon",
+    "numOfEmp": 88,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Sports",
+    "sumInsured": 7271,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Marriott International, Inc",
+    "numOfEmp": 56,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Music",
+    "sumInsured": 594,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Noida, Uttar Pradesh, India",
+    "companyName": "Techved Consulting",
+    "numOfEmp": 48,
+    "fundingStage": "Series A",
+    "industryRandom": "Fashion",
+    "sumInsured": 420,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "Cognizant Technology Solutions India Pvt Ltd",
+    "numOfEmp": 35,
+    "fundingStage": "Venture",
+    "industryRandom": "Others",
+    "sumInsured": 3089,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "rs solution",
+    "numOfEmp": 66,
+    "fundingStage": "Venture",
+    "industryRandom": "Music",
+    "sumInsured": 1325,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "rs solution",
+    "numOfEmp": 27,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Finance",
+    "sumInsured": 624,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "tata motors",
+    "numOfEmp": 60,
+    "fundingStage": "Series B",
+    "industryRandom": "Software",
+    "sumInsured": 9219,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "SAS",
+    "numOfEmp": 98,
+    "fundingStage": "Series C",
+    "industryRandom": "Transport",
+    "sumInsured": 612,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Andhra Pradesh, India",
+    "companyName": "amazon",
+    "numOfEmp": 19,
+    "fundingStage": "Series A",
+    "industryRandom": "Others",
+    "sumInsured": 4056,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "2COMS Consulting Private Limited",
+    "numOfEmp": 41,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Others",
+    "sumInsured": 8354,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Hyderabad, Telangana, India",
+    "companyName": "Venkateshwara Hatcheries Pvt Ltd",
+    "numOfEmp": 40,
+    "fundingStage": "Series B",
+    "industryRandom": "Fashion",
+    "sumInsured": 6980,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Secunderābād, Telangana, India",
+    "companyName": "Reliance Jio Infocomm Limited",
+    "numOfEmp": 3,
+    "fundingStage": "Series A",
+    "industryRandom": "Sports",
+    "sumInsured": 5206,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Golden Orchid",
+    "numOfEmp": 75,
+    "fundingStage": "NA",
+    "industryRandom": "Real Estate",
+    "sumInsured": 4801,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Bosch Group",
+    "numOfEmp": 66,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Food",
+    "sumInsured": 265,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Paytm",
+    "numOfEmp": 16,
+    "fundingStage": "Series B",
+    "industryRandom": "Food",
+    "sumInsured": 2832,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Kotak Mahindra Bank Limited",
+    "numOfEmp": 25,
+    "fundingStage": "NA",
+    "industryRandom": "Finance",
+    "sumInsured": 5452,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Navi Mumbai, Maharashtra, India",
+    "companyName": "Seven Consultancy",
+    "numOfEmp": 15,
+    "fundingStage": "IPO",
+    "industryRandom": "Food",
+    "sumInsured": 2878,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "tata motors",
+    "numOfEmp": 30,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Real Estate",
+    "sumInsured": 5162,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "Datum Recruitment Services",
+    "numOfEmp": 58,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Real Estate",
+    "sumInsured": 3595,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Kanpur, Uttar Pradesh, India",
+    "companyName": "Perfect Solutions",
+    "numOfEmp": 88,
+    "fundingStage": "IPO",
+    "industryRandom": "Internet",
+    "sumInsured": 9194,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Grab",
+    "numOfEmp": 61,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Real Estate",
+    "sumInsured": 2417,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Hyderabad, Telangana, India",
+    "companyName": "YES BANK",
+    "numOfEmp": 83,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Food",
+    "sumInsured": 3337,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "YES BANK",
+    "numOfEmp": 90,
+    "fundingStage": "NA",
+    "industryRandom": "Music",
+    "sumInsured": 9046,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "Honeywell",
+    "numOfEmp": 48,
+    "fundingStage": "NA",
+    "industryRandom": "Software",
+    "sumInsured": 2752,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Chennai, Tamil Nadu, India",
+    "companyName": "Rapid Global Business Solutions",
+    "numOfEmp": 43,
+    "fundingStage": "Series A",
+    "industryRandom": "Music",
+    "sumInsured": 9969,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Ahmedabad, Gujarat, India",
+    "companyName": "Kotak Mahindra Bank Limited",
+    "numOfEmp": 29,
+    "fundingStage": "NA",
+    "industryRandom": "Software",
+    "sumInsured": 4274,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Chennai, Tamil Nadu, India",
+    "companyName": "Multi Recruit",
+    "numOfEmp": 10,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Finance",
+    "sumInsured": 9882,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Chennai, Tamil Nadu, India",
+    "companyName": "Cognizant",
+    "numOfEmp": 62,
+    "fundingStage": "Series A",
+    "industryRandom": "Real Estate",
+    "sumInsured": 9315,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Hyderabad, Telangana, India",
+    "companyName": "amazon",
+    "numOfEmp": 86,
+    "fundingStage": "IPO",
+    "industryRandom": "Real Estate",
+    "sumInsured": 5875,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Hyderabad, Telangana, India",
+    "companyName": "YES BANK",
+    "numOfEmp": 92,
+    "fundingStage": "Series C",
+    "industryRandom": "Internet",
+    "sumInsured": 6045,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Delhi, Delhi, India",
+    "companyName": "Dalmia Bharat Group",
+    "numOfEmp": 98,
+    "fundingStage": "NA",
+    "industryRandom": "Sports",
+    "sumInsured": 3917,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Delhi, India",
+    "companyName": "YES BANK",
+    "numOfEmp": 5,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Transport",
+    "sumInsured": 391,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Honeywell",
+    "numOfEmp": 67,
+    "fundingStage": "Venture",
+    "industryRandom": "Real Estate",
+    "sumInsured": 7939,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "Exalt Consulting Placement Services Private Limited",
+    "numOfEmp": 26,
+    "fundingStage": "IPO",
+    "industryRandom": "Education",
+    "sumInsured": 7017,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "Vegazva Engineering Private Limited",
+    "numOfEmp": 2,
+    "fundingStage": "NA",
+    "industryRandom": "Real Estate",
+    "sumInsured": 1351,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "amazon",
+    "numOfEmp": 73,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Real Estate",
+    "sumInsured": 1235,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Chennai, Tamil Nadu, India",
+    "companyName": "Cognizant",
+    "numOfEmp": 5,
+    "fundingStage": "NA",
+    "industryRandom": "Transport",
+    "sumInsured": 4753,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "Targray",
+    "numOfEmp": 20,
+    "fundingStage": "Series B",
+    "industryRandom": "Sports",
+    "sumInsured": 5726,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "amazon",
+    "numOfEmp": 33,
+    "fundingStage": "Series B",
+    "industryRandom": "Finance",
+    "sumInsured": 2352,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Akola, Maharashtra, India",
+    "companyName": "Perfect Solutions",
+    "numOfEmp": 16,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Transport",
+    "sumInsured": 4713,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "Pidilite Industries Ltd.",
+    "numOfEmp": 11,
+    "fundingStage": "Venture",
+    "industryRandom": "Music",
+    "sumInsured": 5203,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "JobsLo Consultants",
+    "numOfEmp": 14,
+    "fundingStage": "Series A",
+    "industryRandom": "Internet",
+    "sumInsured": 2226,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Chennai, Tamil Nadu, India",
+    "companyName": "amazon",
+    "numOfEmp": 85,
+    "fundingStage": "NA",
+    "industryRandom": "Internet",
+    "sumInsured": 5922,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "FedEx",
+    "numOfEmp": 5,
+    "fundingStage": "NA",
+    "industryRandom": "Finance",
+    "sumInsured": 235,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "C A. Galiakotwala And Company Private Limited",
+    "numOfEmp": 53,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Education",
+    "sumInsured": 4291,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "2COMS Consulting Private Limited",
+    "numOfEmp": 40,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Music",
+    "sumInsured": 9447,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "2COMS Consulting Private Limited",
+    "numOfEmp": 92,
+    "fundingStage": "Series B",
+    "industryRandom": "Education",
+    "sumInsured": 4317,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Secunderābād, Telangana, India",
+    "companyName": "Cygnus Staffing Solutions",
+    "numOfEmp": 57,
+    "fundingStage": "NA",
+    "industryRandom": "Others",
+    "sumInsured": 7753,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Razorpay",
+    "numOfEmp": 47,
+    "fundingStage": "IPO",
+    "industryRandom": "Internet",
+    "sumInsured": 5762,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "Oracle",
+    "numOfEmp": 88,
+    "fundingStage": "Series A",
+    "industryRandom": "Transport",
+    "sumInsured": 9754,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Pune, Maharashtra, India",
+    "companyName": "HRM Info",
+    "numOfEmp": 29,
+    "fundingStage": "Series A",
+    "industryRandom": "Software",
+    "sumInsured": 122,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Bareilly, Uttar Pradesh, India",
+    "companyName": "Perfect Solutions",
+    "numOfEmp": 34,
+    "fundingStage": "NA",
+    "industryRandom": "Real Estate",
+    "sumInsured": 1489,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Hexagon Executive Search",
+    "numOfEmp": 49,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Real Estate",
+    "sumInsured": 1720,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "milaap",
+    "numOfEmp": 97,
+    "fundingStage": "Series C",
+    "industryRandom": "Finance",
+    "sumInsured": 3957,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "amazon",
+    "numOfEmp": 63,
+    "fundingStage": "Venture",
+    "industryRandom": "Real Estate",
+    "sumInsured": 4099,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "Tech Mahindra Limited",
+    "numOfEmp": 87,
+    "fundingStage": "IPO",
+    "industryRandom": "Sports",
+    "sumInsured": 5521,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Kolkata, West Bengal, India",
+    "companyName": "Capgemini",
+    "numOfEmp": 86,
+    "fundingStage": "Venture",
+    "industryRandom": "Education",
+    "sumInsured": 4917,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Erode, Tamil Nadu, India",
+    "companyName": "Kotak Mahindra Bank Limited",
+    "numOfEmp": 80,
+    "fundingStage": "Series B",
+    "industryRandom": "Software",
+    "sumInsured": 4942,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Rupeek Fintech Pvt. Ltd.",
+    "numOfEmp": 5,
+    "fundingStage": "NA",
+    "industryRandom": "Sports",
+    "sumInsured": 4868,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "Tata Consultancy Services Limited",
+    "numOfEmp": 10,
+    "fundingStage": "Series C",
+    "industryRandom": "Real Estate",
+    "sumInsured": 7004,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Nelamangala, Karnataka, India",
+    "companyName": "Venpa Staffing Services India Private Limited",
+    "numOfEmp": 4,
+    "fundingStage": "Series C",
+    "industryRandom": "Education",
+    "sumInsured": 9077,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Noida, Uttar Pradesh, India",
+    "companyName": "2coms",
+    "numOfEmp": 7,
+    "fundingStage": "Self-funding",
+    "industryRandom": "Software",
+    "sumInsured": 8271,
+    "numOfPaidLeaves": 2
+  },
+  {
+    "location": "Hyderabad, Telangana, India",
+    "companyName": "Placement India",
+    "numOfEmp": 27,
+    "fundingStage": "IPO",
+    "industryRandom": "Sports",
+    "sumInsured": 2849,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "amazon",
+    "numOfEmp": 30,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Internet",
+    "sumInsured": 2123,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "amazon",
+    "numOfEmp": 77,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Education",
+    "sumInsured": 2739,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Gurgaon, Haryana, India",
+    "companyName": "To Travel Is To Learn",
+    "numOfEmp": 3,
+    "fundingStage": "Series A",
+    "industryRandom": "Real Estate",
+    "sumInsured": 8323,
+    "numOfPaidLeaves": 0
+  },
+  {
+    "location": "Coimbatore, Tamil Nadu, India",
+    "companyName": "Perfect Solutions",
+    "numOfEmp": 79,
+    "fundingStage": "IPO",
+    "industryRandom": "Real Estate",
+    "sumInsured": 5422,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "Telamon HR Solutions",
+    "numOfEmp": 27,
+    "fundingStage": "Series C",
+    "industryRandom": "Finance",
+    "sumInsured": 5800,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Kolkata, West Bengal, India",
+    "companyName": "amazon",
+    "numOfEmp": 60,
+    "fundingStage": "NA",
+    "industryRandom": "Food",
+    "sumInsured": 8874,
+    "numOfPaidLeaves": 6
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "One Degree North",
+    "numOfEmp": 52,
+    "fundingStage": "Seed-capital",
+    "industryRandom": "Education",
+    "sumInsured": 9040,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Kolkata, West Bengal, India",
+    "companyName": "Oracle",
+    "numOfEmp": 11,
+    "fundingStage": "Series C",
+    "industryRandom": "Music",
+    "sumInsured": 5555,
+    "numOfPaidLeaves": 4
+  },
+  {
+    "location": "Coimbatore, Tamil Nadu, India",
+    "companyName": "YES BANK",
+    "numOfEmp": 86,
+    "fundingStage": "Series A",
+    "industryRandom": "Transport",
+    "sumInsured": 4123,
+    "numOfPaidLeaves": 7
+  },
+  {
+    "location": "Dergaon, Assam, India",
+    "companyName": "Placement India",
+    "numOfEmp": 33,
+    "fundingStage": "NA",
+    "industryRandom": "Internet",
+    "sumInsured": 6034,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "The Bridgespan Group",
+    "numOfEmp": 62,
+    "fundingStage": "Series A",
+    "industryRandom": "Music",
+    "sumInsured": 7899,
+    "numOfPaidLeaves": 9
+  },
+  {
+    "location": "Renukaji, Himachal Pradesh, India",
+    "companyName": "Reliance Jio Infocomm Limited",
+    "numOfEmp": 71,
+    "fundingStage": "Venture",
+    "industryRandom": "Others",
+    "sumInsured": 1110,
+    "numOfPaidLeaves": 8
+  },
+  {
+    "location": "Thane, Maharashtra, India",
+    "companyName": "Reliance Jio Infocomm Limited",
+    "numOfEmp": 96,
+    "fundingStage": "Series C",
+    "industryRandom": "Sports",
+    "sumInsured": 1591,
+    "numOfPaidLeaves": 5
+  },
+  {
+    "location": "Navi Mumbai, Maharashtra, India",
+    "companyName": "PITCS",
+    "numOfEmp": 48,
+    "fundingStage": "Series A",
+    "industryRandom": "Fashion",
+    "sumInsured": 4517,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Bengaluru, Karnataka, India",
+    "companyName": "Cognizant",
+    "numOfEmp": 26,
+    "fundingStage": "NA",
+    "industryRandom": "Others",
+    "sumInsured": 4769,
+    "numOfPaidLeaves": 1
+  },
+  {
+    "location": "Mumbai, Maharashtra, India",
+    "companyName": "Udaan",
+    "numOfEmp": 3,
+    "fundingStage": "Venture",
+    "industryRandom": "Finance",
+    "sumInsured": 4437,
+    "numOfPaidLeaves": 3
+  },
+  {
+    "location": "Lucknow, Uttar Pradesh, India",
+    "companyName": "APCO INFRATECH PVT. LTD",
+    "numOfEmp": 76,
+    "fundingStage": "Series A",
+    "industryRandom": "Finance",
+    "sumInsured": 1293,
+    "numOfPaidLeaves": 5
+  }
+]
