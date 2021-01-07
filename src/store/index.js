@@ -1,242 +1,278 @@
 import { createStore } from 'vuex';
-// import axios from 'axios'
-// import http from "../http-common";
-import UserAPI from '../api/UserAPI'
-import CompanyAPI from '../api/CompanyAPI'
+import UserAPI from '../api/UserAPI';
+import CompanyAPI from '../api/CompanyAPI';
 
-import shop from '@/api/shop'
+// function getClosest(num, ar) {
+//   console.log(num, ' num num num numOfEmp ');
+//   console.log(ar[0].numOfEmp, ' ar[0].numOfEmp ');
+
+//   if (num < ar[0].numOfEmp ? ar[0].numOfEmp : 0) {
+//     return ar[0].numOfEmp;
+//   } else if (
+//     num > ar[ar.length - 1].numOfEmp ? ar[ar.length - 1].numOfEmp : 0
+//   ) {
+//     return ar[ar.length - 1].numOfEmp;
+//   } else {
+//     return ar.sort((a, b) => Math.abs(a - num) - Math.abs(b - num)).slice(0, 3);
+//   }
+// }
+
+function getClosest(num, ar) {
+  if (num < ar[0].numOfEmp) {
+    return ar[0];
+  } else if (num > ar[ar.length - 1].numOfEmp) {
+    return ar[ar.length - 1];
+  } else {
+    return ar
+      .sort((a, b) => Math.abs(a.numOfEmp - num) - Math.abs(b.numOfEmp - num))
+      .slice(0, 3);
+  }
+}
 
 export default createStore({
-   state : {
-      products : [],
-      user : {
-         fullname: "",
-         email: "",
-      },
-      company : {
-         companyName: "",
-         website: "",
-         numOfEmp: "",
-         industry: "Others",
-         funding: "NA",
-         benefits : false,
-         healthInsurance :false,
-         sumInsured : '', 
-         familyCovered : false ,
-         parentsCovered : false, 
-         maternityCovered : false, 
-         gymMembership : false,
-         freeDocOnCall : false, 
-         numOfPaidLeaves : '', 
-         flexibleTimings : false ,
-         remoteWorkFriendly : false ,
-      },
-      users : [],
-      companies : [],
-      viewCompany : {}
-   },
-   
-   getters : { // computed property
-      allPosts: (state) => state.posts,
-      companies: (state) => state.companies,
-      user : state => id => {
-         return state.users.find(user => user.id == id)
-      }
-   },
+  state: {
+    products: [],
+    user: {
+      fullname: '',
+      email: '',
+    },
+    company: {
+      companyName: '',
+      website: '',
+      numOfEmp: 0,
+      industry: 'Others',
+      fundingStage: 'NA',
+      benefits: false,
+      healthInsurance: false,
+      sumInsured: 0,
+      familyCovered: false,
+      parentsCovered: false,
+      maternityCovered: false,
+      gymMembership: false,
+      freeDocOnCall: false,
+      numOfPaidLeaves: 0,
+      flexibleTimings: false,
+      remoteWorkFriendly: false,
+    },
+    users: [],
+    companies: [],
+    viewCompany: {},
+    notifications: [],
+    topCompanies: [],
+  },
 
+  getters: {
+    allPosts: (state) => state.posts,
+    companies: (state) => state.companies,
+  },
 
-   actions : {
-      // getUsers({ commit }) {
-      //    axios.get('http://localhost:5000/api/v1/users')
-      //    .then(response => {
-      //       console.log(response.data,'response')
-      //    commit('SET_USERS', response.data)
-      //    })
-      //    },
-      // getPosts({ commit }) {
-      //    axios.get('https://jsonplaceholder.typicode.com/posts')
-      //    .then(response => {
-      //    commit('SET_POSTS', response.data)
-      //    })
-      //    },
-      ADD_USER({commit}) {
-         console.log('enter ADD_USER');
-         
-         return UserAPI.addUser(this.state.user)
-         .then(response => {
-            console.log(response,'response ADD_USER')
-            commit('CLEAR_USER')
-            })
-            .catch(err => console.log(err,'err'))
-         },
-         ADD_COMPANY({commit}) {
-            return CompanyAPI.addCompany(this.state.company)
-            .then(response => {
-               console.log(response,'response company addedd')
-               commit('CLEAR_COMPANY')
-               })
-               .catch(err => console.log(err,'err'))
-         },
-         GET_COMPANIES({ commit }) {
-         console.log('enter GET_COMPANIES');
-         return CompanyAPI.getCompanies()
-         .then(response => {
-            console.log(response,'response GET_USERS')
-            commit('SET_COMPANIES', response.data)
-            })
-            .catch(err => console.log(err,'err'))
-         },
+  actions: {
+    ADD_USER({ commit }) {
+      return UserAPI.addUser(this.state.user)
+        .then(() => {
+          commit('CLEAR_USER');
+        })
+        .catch((err) => console.log(err, 'err'));
+    },
+    ADD_COMPANY({ commit }) {
+      return CompanyAPI.addCompany(this.state.company)
+        .then(() => {
+          commit('CLEAR_COMPANY');
+        })
+        .catch((err) => console.log(err, 'err'));
+    },
 
-         GET_COMPANY({commit}, id) {
-            console.log(id,'enter GET_COMPANY');
-            return CompanyAPI.getCompany(id)
-            .then(response => {
-               console.log(response,'response GET_USERS')
-               commit('VIEW_COMPANY_DATA', response.data)
-               })
-               .catch(err => console.log(err,'err'))
-            },
-         
-         GET_POST({ commit }) {
-            console.log('enter GET_POST');
-            return UserAPI.getPosts()
-            .then(response => {
-               console.log(response,'response GET_POST')
-               commit('SET_POSTS', response)
-               })
-               .catch(err => console.log(err,'err'))
-            },
-     
-      // fetch products
-      fetchProducts({commit}) {
+    CLEAR_DATA({ commit }) {
+      commit('CLEAR_USER');
+      commit('CLEAR_COMPANY');
+    },
 
-         return new Promise((resolve) => {
-            shop.getProducts(products => {
-               console.log(products,'products store')
-               commit("setProducts", products)
-               resolve();
-             })   
-         })
-      },
-      fetchCompanies({commit}) {
+    GET_COMPANIES({ commit }) {
+      return CompanyAPI.getCompanies()
+        .then((response) => {
+          commit('SET_COMPANIES', response.data);
+        })
+        .catch((err) => console.log(err, 'err'));
+    },
 
-         return new Promise((resolve) => {
-            shop.getProducts(products => {
-               console.log(products,'products store')
-               commit("setProducts", products)
-               resolve();
-             })   
-         })
-      }
-   },
+    GET_COMPANY({ commit }, id) {
+      return CompanyAPI.getCompany(id)
+        .then((response) => {
+          commit('VIEW_COMPANY_DATA', response.data);
+        })
+        .catch((err) => console.log(err, 'err'));
+    },
 
-   mutations : {
-      CLEAR_USER(state) {
-         state.user.fullname = '';
-         state.user.email = '';
-         },
+    DELETE_COMPANY({ commit }, id) {
+      return CompanyAPI.deleteCompany(id)
+        .then((response) => {
+          commit('CLEAR_COMPANY', response.data);
+        })
+        .catch((err) => console.log(err, 'err'));
+    },
 
-         CLEAR_COMPANY(state) {
-            state.company.companyName = "";
-            state.company.website = "";
-            state.company.numOfEmp= "";
-            state.company.industry= "Others";
-            state.company.funding= "NA";
-            state.company.benefits = false;
-            state.company.healthInsurance =false;
-            state.company.sumInsured = ''; 
-            state.company.familyCovered = false ;
-            state.company.parentsCovered = false; 
-            state.company.maternityCovered = false; 
-            state.company.gymMembership = false;
-            state.company.freeDocOnCall = false; 
-            state.company.numOfPaidLeaves = ''; 
-            state.company.flexibleTimings = false ;
-            state.company.remoteWorkFriendly = false ;
-            },
+    UPDATE_COMPANY({ commit }) {
+      return CompanyAPI.updateCompany(this.state.company)
+        .then((response) => {
+          commit('CLEAR_COMPANY', response.data);
+        })
+        .catch((err) => console.log(err, 'err'));
+    },
 
-      SET_COMPANIES(state, companies) {
-         state.companies = companies;
-         },
-         VIEW_COMPANY_DATA(state, company) {
-            console.log('VIEW_COMPANY_DATA VIEW_COMPANY_DATA')
-            state.viewCompany = company;
-         },
-      SET_POSTS(state, posts) {
-         console.log(posts,'posts');
-         state.posts = posts
-         },
-      setProducts(state, products){
-         console.log('mutatuon called',products);
-         state.products = products;
-      },
+    GET_TOP_COMPANY({ commit }, data) {
+      console.log(
+        getClosest(
+          data.numOfEmp,
+          this.state.companies.filter((comp) => comp.industry == data.industry)
+        ),
+        'get closests'
+      );
 
-      // setCompanies(state, companies){
-      //    console.log('mutatuon called companies',companies);
-      //    state.companies = companies;
-      // },
+      commit('SET_TOP_COMPANY', 'data');
+    },
 
-      setFullname(state, value) {
-         console.log(value,'value')
-         state.user.fullname = value
-     },
-     setEmail(state, value) {
-         state.user.email = value
-     },
+    GET_POST({ commit }) {
+      return UserAPI.getPosts()
+        .then((response) => {
+          commit('SET_POSTS', response);
+        })
+        .catch((err) => console.log(err, 'err'));
+    },
 
-     setCompanyName(state, value) {
-      console.log('companyName mutatipon',value)
-       state.company.companyName = value
-   },
-   setWebsite(state, value) {
-      console.log('companyName mutatipon',value)
-       state.company.website = value
-   },
-   setNumOfEmp(state, value) {
-      console.log('companyName mutatipon',value)
-       state.company.numOfEmp = value
-   },
-   setIndustry(state, value) {
-      console.log('companyName mutatipon',value)
-       state.company.industry = value
-   },
-   setFunding(state, value) {
-      console.log('companyName mutatipon',value)
-       state.company.funding = value
-   },
-     setBenefits(state, value) {
-         state.company.benefits = value
-     },
-     setHealthInsurance(state, value) {
-         state.company.healthInsurance = value
-     },
+    EDIT_COMPANY({ commit }, id) {
+      return new Promise((resolve) => {
+        CompanyAPI.getCompany(id)
+          .then((response) => {
+            commit('SET_COMPANY', response.data);
+            resolve();
+          })
+          .catch((err) => console.log(err, 'err'));
+      });
+    },
 
-     setSumInsured(state, value) {
-         state.company.sumInsured = value
-      },
-      setFamilyCovered(state, value) {
-         state.company.familyCovered = value
-      },
-      setParentsCovered(state, value) {
-         state.company.parentsCovered = value
-      },
-      setMaternityCovered(state, value) {
-         state.company.maternityCovered = value
-      },
-      setGymMembership(state, value) {
-         state.company.gymMembership = value
-      },
-      setFreeDocOnCall(state, value) {
-         state.company.freeDocOnCall = value
-      },
-      setNumOfPaidLeaves(state, value) {
-         state.company.numOfPaidLeaves = value
-      },
-      setFlexibleTimings(state, value) {
-         state.company.flexibleTimings = value
-      },
-      setRemoteWorkFriendly(state, value) {
-         state.company.remoteWorkFriendly = value
-      },
-   }
- })
+    addNotification({ commit }, notification) {
+      commit('PUSH_NOTIFICATION', notification);
+    },
+
+    removeNotification({ commit }, id) {
+      commit('REMOVE_NOTIFICATION', id);
+    },
+  },
+
+  mutations: {
+    PUSH_NOTIFICATION(state, notification) {
+      state.notifications.push({
+        ...notification,
+        id: (Math.random().toString(36) + Date.now().toString(36)).substr(2),
+      });
+    },
+
+    REMOVE_NOTIFICATION(state, id) {
+      state.notifications = state.notifications.filter((notification) => {
+        return notification.id != id;
+      });
+    },
+
+    CLEAR_USER(state) {
+      state.user.fullname = '';
+      state.user.email = '';
+    },
+
+    CLEAR_COMPANY(state) {
+      state.company.companyName = '';
+      state.company.website = '';
+      state.company.numOfEmp = 0;
+      state.company.industry = 'Others';
+      state.company.fundingStage = 'NA';
+      state.company.benefits = false;
+      state.company.healthInsurance = false;
+      state.company.sumInsured = 0;
+      state.company.familyCovered = false;
+      state.company.parentsCovered = false;
+      state.company.maternityCovered = false;
+      state.company.gymMembership = false;
+      state.company.freeDocOnCall = false;
+      state.company.numOfPaidLeaves = 0;
+      state.company.flexibleTimings = false;
+      state.company.remoteWorkFriendly = false;
+    },
+
+    SET_COMPANIES(state, companies) {
+      state.companies = companies;
+    },
+    SET_TOP_COMPANY(state, companies) {
+      state.topCompanies = companies;
+    },
+
+    SET_COMPANY(state, company) {
+      state.company = company;
+    },
+
+    VIEW_COMPANY_DATA(state, company) {
+      state.viewCompany = company;
+    },
+    SET_POSTS(state, posts) {
+      state.posts = posts;
+    },
+    setProducts(state, products) {
+      state.products = products;
+    },
+
+    setFullname(state, value) {
+      state.user.fullname = value;
+    },
+    setEmail(state, value) {
+      state.user.email = value;
+    },
+
+    setCompanyName(state, value) {
+      state.company.companyName = value;
+    },
+    setWebsite(state, value) {
+      state.company.website = value;
+    },
+    setNumOfEmp(state, value) {
+      state.company.numOfEmp = value;
+    },
+    setIndustry(state, value) {
+      state.company.industry = value;
+    },
+    setFunding(state, value) {
+      state.company.fundingStage = value;
+    },
+    setBenefits(state, value) {
+      state.company.benefits = value;
+    },
+    setHealthInsurance(state, value) {
+      state.company.healthInsurance = value;
+    },
+
+    setSumInsured(state, value) {
+      state.company.sumInsured = value;
+    },
+    setFamilyCovered(state, value) {
+      state.company.familyCovered = value;
+    },
+    setParentsCovered(state, value) {
+      state.company.parentsCovered = value;
+    },
+    setMaternityCovered(state, value) {
+      state.company.maternityCovered = value;
+    },
+    setGymMembership(state, value) {
+      state.company.gymMembership = value;
+    },
+    setFreeDocOnCall(state, value) {
+      state.company.freeDocOnCall = value;
+    },
+    setNumOfPaidLeaves(state, value) {
+      state.company.numOfPaidLeaves = value;
+    },
+    setFlexibleTimings(state, value) {
+      state.company.flexibleTimings = value;
+    },
+    setRemoteWorkFriendly(state, value) {
+      state.company.remoteWorkFriendly = value;
+    },
+  },
+});

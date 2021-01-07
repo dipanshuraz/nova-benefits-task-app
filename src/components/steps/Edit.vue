@@ -1,6 +1,6 @@
 <template>
   <div class="text-left w-50 mx-auto border border-light p-5 ">
-    <p class="h4 mb-4">Company Details</p>
+    <p class="h4 mb-4">Update Company Details</p>
 
     <input
       type="text"
@@ -92,7 +92,7 @@
       <br />
       Sum Insured :
       <input
-        type="number"
+        type="text"
         id="sumInsured"
         name="sumInsured"
         class="form-control"
@@ -173,17 +173,21 @@
       />
     </div>
 
-    <buttons></buttons>
+    <button @click="updateCompany" class="btn btn-outline-primary mr-3">
+      UPDATE
+    </button>
+
+    <button @click="deleteComapany" class="btn btn-outline-danger">
+      DELETE
+    </button>
   </div>
 </template>
 
 <script>
-import Buttons from './Buttons.vue';
+// import Buttons from './Buttons.vue';
 
 export default {
-  components: {
-    Buttons,
-  },
+  components: {},
   computed: {
     companyName: {
       get() {
@@ -219,6 +223,7 @@ export default {
     },
     funding: {
       get() {
+        console.log('fundingStage', this.$store.state.company.fundingStage);
         return this.$store.state.company.fundingStage;
       },
       set(value) {
@@ -227,91 +232,142 @@ export default {
     },
     benefits: {
       get() {
+        console.log(this.$store.state.company.benefits, 'benefits');
         return this.$store.state.company.benefits;
       },
       set(value) {
+        console.log(value, 'setBenefits');
         this.$store.commit('setBenefits', value);
       },
     },
     healthInsurance: {
       get() {
+        console.log(
+          this.$store.state.company.healthInsurance,
+          'healthInsurance'
+        );
         return this.$store.state.company.healthInsurance;
       },
       set(value) {
+        console.log(value, 'setHealthInsurance');
         this.$store.commit('setHealthInsurance', value);
       },
     },
     sumInsured: {
       get() {
+        console.log(this.$store.state.company.sumInsured, 'sumInsured');
         return this.$store.state.company.sumInsured;
       },
       set(value) {
+        console.log(value, 'setSumInsured');
         this.$store.commit('setSumInsured', value);
       },
     },
     familyCovered: {
       get() {
+        console.log(this.$store.state.company.familyCovered, 'familyCovered');
         return this.$store.state.company.familyCovered;
       },
       set(value) {
+        console.log(value, 'setFamilyCovered');
         this.$store.commit('setFamilyCovered', value);
       },
     },
     parentsCovered: {
       get() {
+        console.log(this.$store.state.company.parentsCovered, 'parentsCovered');
         return this.$store.state.company.parentsCovered;
       },
       set(value) {
+        console.log(value, 'setParentsCovered');
         this.$store.commit('setParentsCovered', value);
       },
     },
     maternityCovered: {
       get() {
+        console.log(
+          this.$store.state.company.maternityCovered,
+          'maternityCovered'
+        );
         return this.$store.state.company.maternityCovered;
       },
       set(value) {
+        console.log(value, 'setMaternityCovered');
         this.$store.commit('setMaternityCovered', value);
       },
     },
     gymMembership: {
       get() {
+        console.log(this.$store.state.company.gymMembership, 'gymMembership');
         return this.$store.state.company.gymMembership;
       },
       set(value) {
+        console.log(value, 'setGymMembership');
         this.$store.commit('setGymMembership', value);
       },
     },
     freeDocOnCall: {
       get() {
+        console.log(this.$store.state.company.freeDocOnCall, 'freeDocOnCall');
         return this.$store.state.company.freeDocOnCall;
       },
       set(value) {
+        console.log(value, 'setFreeDocOnCall');
         this.$store.commit('setFreeDocOnCall', value);
       },
     },
     numOfPaidLeaves: {
       get() {
+        console.log(
+          this.$store.state.company.numOfPaidLeaves,
+          'numOfPaidLeaves'
+        );
         return this.$store.state.company.numOfPaidLeaves;
       },
       set(value) {
+        console.log(value, 'setNumOfPaidLeaves');
         this.$store.commit('setNumOfPaidLeaves', value);
       },
     },
     flexibleTimings: {
       get() {
+        console.log(
+          this.$store.state.company.flexibleTimings,
+          'flexibleTimings'
+        );
         return this.$store.state.company.flexibleTimings;
       },
       set(value) {
+        console.log(value, 'setFlexibleTimings');
         this.$store.commit('setFlexibleTimings', value);
       },
     },
     remoteWorkFriendly: {
       get() {
+        console.log(
+          this.$store.state.company.remoteWorkFriendly,
+          'remoteWorkFriendly'
+        );
         return this.$store.state.company.remoteWorkFriendly;
       },
       set(value) {
+        console.log(value, 'setRemoteWorkFriendly');
         this.$store.commit('setRemoteWorkFriendly', value);
       },
+    },
+  },
+  created() {
+    this.$store.dispatch('EDIT_COMPANY', this.$route.params.id);
+  },
+
+  methods: {
+    updateCompany() {
+      this.$store.dispatch('UPDATE_COMPANY');
+      this.$router.push(`/view-details/${this.$route.params.id}`);
+    },
+    deleteComapany() {
+      this.$store.dispatch('DELETE_COMPANY', this.$route.params.id);
+      this.$router.push(`/`);
     },
   },
 };

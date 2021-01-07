@@ -1,13 +1,20 @@
 <template>
-  <div id="nav">
-
-
-    <router-link to="/">Home</router-link> |
-    <router-link to="/show-companies">View Companies</router-link> |
-    <router-link to="/about">About</router-link> 
+  <div id="container-fluid">
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/show-companies">View Companies</router-link> |
+      <router-link to="/about">About</router-link>
+    </div>
+    <router-view />
   </div>
-  <router-view/>
 </template>
+
+<script>
+export default {
+  name: 'app',
+  components: {},
+};
+</script>
 
 <style>
 #app {

@@ -30,11 +30,9 @@
         computed: {
             fullname: {
                 get() {
-                  console.log(this.$store.state.fullname,'getter')
                     return this.$store.state.user.fullname
                 },
                 set(value) {
-                  console.log(value,'setter')
                     this.$store.commit('setFullname', value)
                 }
             },

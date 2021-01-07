@@ -1,16 +1,26 @@
-const express = require("express");
+const express = require('express');
 const {
   getCompanies,
   addCompany,
   getCompany,
   updateCompany,
-  deleteCompany
-} = require("../controller/company");
+  deleteCompany,
+  getTopCompanies,
+} = require('../controller/company');
 
 const router = express.Router({ mergeParams: true });
 
-router.route("/").get(getCompanies).post(addCompany);
+router
+  .route('/')
+  .get(getCompanies)
+  .post(addCompany);
 
-router.route("/:id").get(getCompany).put(updateCompany).delete(deleteCompany);
+router.route('/getTop/:industry').get(getTopCompanies);
+
+router
+  .route('/:id')
+  .get(getCompany)
+  .put(updateCompany)
+  .delete(deleteCompany);
 
 module.exports = router;
