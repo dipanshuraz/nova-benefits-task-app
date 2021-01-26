@@ -54,6 +54,7 @@ export default createStore({
       flexibleTimings: false,
       remoteWorkFriendly: false,
     },
+    currentUser : {},
     users: [],
     companies: [],
     viewCompany: {},
@@ -67,15 +68,45 @@ export default createStore({
   },
 
   actions: {
+    showAlert() {
+      console.log('object');
+      this.$swal('Hello Vue world!!!');
+    },
     ADD_USER({ commit }) {
+
+      let self = this;
+      this.$swal.fire({
+        title: "Processing Request...",
+        text: "Please wait",
+        onBeforeOpen() {
+          self.$swal.showLoading(); //Adds built in loader animation during modal open
+        },
+        onAfterClose() {
+          self.$swal.hideLoading(); //might not be necessary
+        },
+        allowOutsideClick: false, //makes modal behave captively
+        allowEscapeKey: false,
+        allowEnterKey: false
+      });
+
       return UserAPI.addUser(this.state.user)
-        .then(() => {
+        .then((res) => {
+          console.log(res,'res');
           commit('CLEAR_USER');
+          if(res.data) {
+            this.$swal.update({
+              title: "Finished",
+              html: `Response data: ${res.data}`
+            });
+            this.$swal.hideLoading(); //Disables
+            commit('SET_CURRENT_USER',res.data)
+          }
         })
         .catch((err) => console.log(err, 'err'));
     },
     ADD_COMPANY({ commit }) {
-      return CompanyAPI.addCompany(this.state.company)
+      console.log(this.state.currentUser.email,'currentUser');
+      return CompanyAPI.addCompany(this.state.company,this.state.currentUser.email)
         .then(() => {
           commit('CLEAR_COMPANY');
         })
@@ -214,6 +245,11 @@ export default createStore({
     SET_POSTS(state, posts) {
       state.posts = posts;
     },
+
+    SET_CURRENT_USER(state, user) {
+      state.currentUser = user;
+    },
+
     setProducts(state, products) {
       state.products = products;
     },

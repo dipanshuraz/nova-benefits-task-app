@@ -127,13 +127,15 @@ export default {
     close() {
       this.showResult = false;
     },
-    save() {
+    async save() {
       if (this.$store.state.user.fullname && this.$store.state.user.email) {
-        this.$store.dispatch('ADD_USER');
+        await this.$store.dispatch('ADD_USER');
       }
+
       if (this.$store.state.company.companyName) {
-        this.$store.dispatch('ADD_COMPANY');
+        await this.$store.dispatch('ADD_COMPANY');
       }
+      
       this.showResult = false;
       this.$router.push('/show-companies/');
     },

@@ -1,8 +1,10 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
-const CompanySchema = new mongoose.Schema({
+const CompanySchema = new Schema({
   companyName: { type: String, required: [true, 'Please add a Name'] },
   website: { type: String },
+  domain : {type : String},
   numOfEmp: { type: String },
   fundingStage: {
     type: String,

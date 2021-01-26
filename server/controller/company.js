@@ -42,11 +42,14 @@ exports.getCompany = asyncHandler(async (req, res, next) => {
 });
 
 exports.addCompany = asyncHandler(async (req, res, next) => {
-  const company = await Company.create(req.body);
+  req.body.domain = req.body.domain.substring(req.body.domain.lastIndexOf("@") +1);
+  console.log(req.body,'req.body')
+
+  // const company = await Company.create(req.body);
 
   res.status(201).json({
-    success: true,
-    data: company,
+    // success: true,
+    // data: company,
   });
 });
 

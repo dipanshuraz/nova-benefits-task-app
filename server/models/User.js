@@ -1,7 +1,9 @@
-const mongoose = require('mongoose');
+var mongoose = require('mongoose'),
+    Schema = mongoose.Schema;
 
-const UserSchema = new mongoose.Schema({
+const UserSchema = new Schema({
   fullname: { type: String, required : [true, 'Please add a Name'] },
+  company: { type: Schema.ObjectId, ref: 'Company', default: null },
   email: {
     type: String,
     required: [true, 'Please add an email'],

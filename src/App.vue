@@ -1,5 +1,6 @@
 <template>
   <div id="container-fluid">
+     <button @click="showAlert">Hello world</button>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/show-companies">View Companies</router-link> |
@@ -13,6 +14,11 @@
 export default {
   name: 'app',
   components: {},
+   methods: {
+    showAlert() {
+      this.$swal('Hello Vue world!!!');
+    },
+  },
 };
 </script>
 

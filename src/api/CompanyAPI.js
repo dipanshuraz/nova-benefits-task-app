@@ -6,7 +6,8 @@ export default {
       return res.data;
     });
   },
-  addCompany(company) {
+  addCompany(company, domain) {
+    company.domain = domain;
     return axios
       .post('http://localhost:5000/api/v1/company', company)
       .then((res) => {
